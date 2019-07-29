@@ -11,12 +11,12 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <title>Preços Tabela Fipe</title>
+    <title>Consulta aê</title>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
+        <a class="navbar-brand logo" href="#">Consulta aê</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -31,41 +31,16 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
               <a class="nav-link" href="#"
                 >Home <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+              <a class="nav-link" href="#">Tabela Fipe</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-                >Disabled</a
-              >
+              <a class="nav-link" href="#">Seu CPF</a>
             </li>
           </ul>
           <form class="form-inline my-2 my-lg-0">
@@ -83,51 +58,26 @@
       </nav>
     </header>
 
-    <header>
-      <!-- <select name="marca" id="selectMarca"></select> -->
-      <select name="modelo" id="selectModelo"></select>
-      <select name="ano" id="selectAno"></select>
-    </header>
-
-    <section>
+    <section id="tabela-fipe">
       <article id="form-tb-fipe">
         <form>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
-          </div>
           <div class="form-group">
             <label for="selectMarca">Selecione uma Marca</label>
             <select class="form-control" name="marca" id="selectMarca"></select>
           </div>
+
           <div class="form-group">
-            <label for="exampleFormControlSelect2"
-              >Example multiple select</label
-            >
+            <label for="selectMarca">Selecione o Modelo</label>
             <select
-              multiple
               class="form-control"
-              id="exampleFormControlSelect2"
-            >
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-            </select>
+              name="modelo"
+              id="selectModelo"
+            ></select>
           </div>
+
           <div class="form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
+            <label for="selectMarca">Selecione o Ano</label>
+            <select class="form-control" name="ano" id="selectAno"></select>
           </div>
         </form>
       </article>

@@ -6,6 +6,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.logo {
+  font-size: 30px !important;
+}
+
 /* 
 header {
   background-color: #666;
@@ -28,6 +32,29 @@ nav ul {
   padding: 0;
 } */
 
+#form-tb-fipe {
+  display: inline-block;
+  float: left;
+  padding: 20px;
+  width: 40%;
+  background-color: #f1f1f1;
+  height: 600px; /* only for demonstration, should be removed */
+  margin-left: 5%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+
+#informacoes {
+  display: inline-block;
+  float: left;
+  padding: 20px;
+  width: 40%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+  margin-left: 10%;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
 article {
   float: left;
   padding: 20px;

@@ -4,7 +4,7 @@ const listaModelos = document.querySelector("#lista-modelos");
 const selectModelo = document.querySelector("#selectModelo");
 const selectAno = document.querySelector("#selectAno");
 
-let marca, modelo;
+let marca, modelo, ano;
 
 fetch(`${baseUrl}/marcas.json`)
   .then(data => data.json())
@@ -40,6 +40,7 @@ selectModelo.addEventListener("change", () => {
       selectAno.innerText = "";
       ArrayData.map(data => {
         let option = document.createElement("option");
+        option.value = data.fipe_codigo;
         option.innerHTML = data.fipe_codigo;
         selectAno.appendChild(option);
       });
@@ -47,5 +48,8 @@ selectModelo.addEventListener("change", () => {
 });
 
 selectAno.addEventListener("change", () => {
-  fetch(`${baseUrl}/veiculo/${selectMarca.value}/4828/2013-1.json`);
+  ano = selectAno.value;
+  fetch(`${baseUrl}/veiculo/${marca}/${modelo}/${ano}.json`)
+    .then(data => data.json())
+    .then(data => console.log(data));
 });
