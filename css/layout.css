@@ -34,7 +34,7 @@ nav ul {
 
 #form-tb-fipe {
   display: inline-block;
-  float: left;
+  /* float: left; */
   padding: 20px;
   width: 40%;
   background-color: #f1f1f1;
@@ -46,7 +46,7 @@ nav ul {
 
 #informacoes {
   display: inline-block;
-  float: left;
+  /* float: left; */
   padding: 20px;
   width: 40%;
   background-color: #f1f1f1;

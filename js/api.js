@@ -51,5 +51,8 @@ selectAno.addEventListener("change", () => {
   ano = selectAno.value;
   fetch(`${baseUrl}/veiculo/${marca}/${modelo}/${ano}.json`)
     .then(data => data.json())
-    .then(data => console.log(data));
+    .then(data => {
+      document.querySelector("#data-referencia").value = data.referencia;
+      document.querySelector("#modelo-info").value = data.name;
+    });
 });
