@@ -80,6 +80,9 @@
             <select class="form-control" name="ano" id="selectAno"></select>
           </div>
         </form>
+        <!-- <div class="spinner-border text-success" role="status">
+          <span class="sr-only">Loading...</span>
+        </div> -->
       </article>
 
       <article id="informacoes">
@@ -95,10 +98,50 @@
           </div>
 
           <div class="form-group">
+            <label for="marca-info">Marca</label>
+            <input
+              type="text"
+              id="marca-info"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+
+          <div class="form-group">
             <label for="modelo-info">Modelo</label>
             <input
               type="text"
               id="modelo-info"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="ano-info">Ano</label>
+            <input
+              type="text"
+              id="ano-info"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="combustivel-info">Combustivel</label>
+            <input
+              type="text"
+              id="combustivel-info"
+              class="form-control"
+              placeholder=""
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="preco-info">Preço</label>
+            <input
+              type="text"
+              id="preco-info"
               class="form-control"
               placeholder=""
             />
@@ -108,7 +151,8 @@
     </section>
 
     <footer>
-      <h3>Roda pé</h3>
+      <h4>Dados vindos do fipeapi</h4>
+      <h6>http://fipeapi.appspot.com</h6>
     </footer>
 
     <script src="./js/api.js"></script>

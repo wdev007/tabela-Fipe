@@ -52,7 +52,12 @@ selectAno.addEventListener("change", () => {
   fetch(`${baseUrl}/veiculo/${marca}/${modelo}/${ano}.json`)
     .then(data => data.json())
     .then(data => {
+      console.log(data);
       document.querySelector("#data-referencia").value = data.referencia;
       document.querySelector("#modelo-info").value = data.name;
+      document.querySelector("#marca-info").value = data.marca;
+      document.querySelector("#ano-info").value = data.ano_modelo;
+      document.querySelector("#combustivel-info").value = data.combustivel;
+      document.querySelector("#preco-info").value = data.preco;
     });
 });

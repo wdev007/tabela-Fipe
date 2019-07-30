@@ -31,6 +31,9 @@ nav ul {
   list-style-type: none;
   padding: 0;
 } */
+footer {
+  margin-bottom: 0;
+}
 
 #form-tb-fipe {
   display: inline-block;
@@ -38,7 +41,7 @@ nav ul {
   padding: 20px;
   width: 40%;
   background-color: #f1f1f1;
-  height: 600px; /* only for demonstration, should be removed */
+  height: 300px; /* only for demonstration, should be removed */
   margin-left: 5%;
   margin-bottom: 5%;
   margin-top: 3%;
@@ -50,7 +53,7 @@ nav ul {
   padding: 20px;
   width: 40%;
   background-color: #f1f1f1;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 600px; /* only for demonstration, should be removed */
   margin-left: 10%;
   margin-bottom: 5%;
   margin-top: 3%;
